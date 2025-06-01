@@ -1,0 +1,1862 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript y Python</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: monospace;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        pre {
+            overflow-x: auto;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicios en JavaScript y Python</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ejercicio</th>
+                <th>JavaScript</th>
+                <th>Python</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1 - Leernum</td>
+                <td>
+                    <pre>
+let numero = parseFloat(prompt("Ingrese un número:"));
+let resultado = numero / 2;
+console.log("El resultado es:", resultado);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+numero = float(input("Ingrese un número: "))
+resultado = numero / 2
+print("El resultado es:", resultado)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>2 - CuboNum</td>
+                <td>
+                    <pre>
+let numero = parseInt(prompt("Ingrese un número:"));
+let resultado = numero * numero * numero;
+console.log("El resultado del cubo es:", resultado);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+numero = int(input("Ingrese un número: "))
+resultado = numero ** 3
+print("El resultado del cubo es:", resultado)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>3 - Acuadrado</td>
+                <td>
+                    <pre>
+let numero = parseFloat(prompt("Ingrese número:"));
+let area = numero * numero;
+console.log("El área del cuadrado es:", area);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+numero = float(input("Ingrese número: "))
+area = numero * numero
+print("El área del cuadrado es:", area)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>4 - Atriangulo</td>
+                <td>
+                    <pre>
+let base = parseFloat(prompt("Ingrese la base del triángulo:"));
+let altura = parseFloat(prompt("Ingrese la altura del triángulo:"));
+let area = (base * altura) / 2;
+console.log("El área del triángulo es:", area);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+base = float(input("Ingrese la base del triángulo: "))
+altura = float(input("Ingrese la altura del triángulo: "))
+area = (base * altura) / 2
+print("El área del triángulo es:", area)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>5 - Arectangulo</td>
+                <td>
+                    <pre>
+let base = parseFloat(prompt("Ingrese la base del rectángulo:"));
+let altura = parseFloat(prompt("Ingrese la altura del rectángulo:"));
+let area = base * altura;
+alert("El área del rectángulo es: " + area);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+base = float(input("Ingrese la base del rectángulo: "))
+altura = float(input("Ingrese la altura del rectángulo: "))
+area = base * altura
+print("El área del rectángulo es:", area)
+                    </pre>
+                </td>
+            </tr>
+             <tr>
+                <td>6 - AreaCirculo</td>
+                <td>
+                    <pre>
+let radio = parseFloat(prompt("Ingrese el radio del círculo:"));
+
+let area = 3.1416 * radio * radio;
+
+alert("El área del círculo es: " + area);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+radio = float(input("Ingrese el radio del círculo: "))
+area = 3.1416 * radio * radio
+print("El área del círculo es:", area)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>7 - AreaTrapecio</td>
+                <td>
+                    <pre>
+let basemayor = parseFloat(prompt("Ingrese base mayor:"));
+let basemenor = parseFloat(prompt("Ingrese base menor:"));
+let altura = parseFloat(prompt("Ingrese altura:"));
+
+let area = (basemayor + basemenor) * altura / 2;
+
+alert("El área del trapecio es: " + area);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+base_mayor = float(input("Ingrese base mayor: "))
+base_menor = float(input("Ingrese base menor: "))
+altura = float(input("Ingrese altura: "))
+area = (base_mayor + base_menor) * altura / 2
+print("El área del trapecio es:", area)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>8 - AreaCilindro</td>
+                <td>
+                    <pre>
+let radio = parseFloat(prompt("Ingrese radio:"));
+let altura = parseFloat(prompt("Ingrese altura:"));
+
+let area = 2 * 3.1416 * radio * (radio + altura);
+
+alert("El área del cilindro es: " + area);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+radio = float(input("Ingrese radio: "))
+altura = float(input("Ingrese altura: "))
+area = 2 * 3.1416 * radio * (radio + altura)
+print("El área del cilindro es:", area)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>9 - PrecioConIVA</td>
+                <td>
+                    <pre>
+let precio = parseFloat(prompt("Ingrese precio:"));
+
+let precioTotal = precio + ((precio * 16) / 100);
+
+alert("El precio total es: " + precioTotal);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+precio = float(input("Ingrese precio: "))
+precio_total = precio + (precio * 0.16)  # Using 0.16 for 16%
+print("El precio total es:", precio_total)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>10 - CelsiusAFahrenheit</td>
+                <td>
+                    <pre>
+let celsius = parseFloat(prompt("Ingrese Temperatura en Celsius:"));
+
+let fahrenheit = ((9/5) * celsius) + 32;
+
+alert("Temperatura en Fahrenheit: " + fahrenheit);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+celsius = float(input("Ingrese Temperatura en Celsius: "))
+fahrenheit = ((9/5) * celsius) + 32
+print("Temperatura en Fahrenheit:", fahrenheit)
+                    </pre>
+                </td>
+            </tr>
+             <tr>
+                <td>11 - FahrenheitACelsius</td>
+                <td>
+                    <pre>
+let fahrenheit = parseFloat(prompt("Ingrese Temperatura en Fahrenheit:"));
+
+let celsius = (fahrenheit - 32) * 5 / 9;
+
+alert("Temperatura en Celsius: " + celsius);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+fahrenheit = float(input("Ingrese Temperatura en Fahrenheit: "))
+celsius = (fahrenheit - 32) * 5 / 9
+print("Temperatura en Celsius:", celsius)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>12 - LibrasAKilogramos</td>
+                <td>
+                    <pre>
+let libras = parseFloat(prompt("Ingrese libras:"));
+
+let kg = libras * 0.4536;
+
+alert("Kilogramos es: " + kg);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+libras = float(input("Ingrese libras: "))
+kg = libras * 0.4536
+print("Kilogramos es:", kg)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>13 - KilosAGramosYToneladas</td>
+                <td>
+                    <pre>
+let kilos = parseFloat(prompt("Ingrese peso en kg:"));
+
+let gramos = kilos * 1000;
+let toneladas = kilos / 1000;
+
+alert("Gramos: " + gramos);
+alert("Toneladas: " + toneladas);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+kilos = float(input("Ingrese peso en kg: "))
+gramos = kilos * 1000
+toneladas = kilos / 1000
+print("Gramos:", gramos)
+print("Toneladas:", toneladas)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>14 - PendienteDeLinea</td>
+                <td>
+                    <pre>
+let x1 = parseFloat(prompt("Ingrese X1:"));
+let y1 = parseFloat(prompt("Ingrese Y1:"));
+let x2 = parseFloat(prompt("Ingrese X2:"));
+let y2 = parseFloat(prompt("Ingrese Y2:"));
+
+let m = (y2 - y1) / (x2 - x1);
+
+alert("La pendiente es: " + m);
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+x1 = float(input("Ingrese X1: "))
+y1 = float(input("Ingrese Y1: "))
+x2 = float(input("Ingrese X2: "))
+y2 = float(input("Ingrese Y2: "))
+m = (y2 - y1) / (x2 - x1)
+print("La pendiente es:", m)
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>15 - NumeroPositivoNegativo</td>
+                <td>
+                    <pre>
+let N = parseInt(prompt("Ingrese un número:"));
+
+if (N > 0) {
+    alert("El valor es positivo");
+} else {
+    alert("El valor es negativo");
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+N = int(input("Ingrese un número: "))
+if N > 0:
+    print("El valor es positivo")
+else:
+    print("El valor es negativo")
+                    </pre>
+                </td>
+            </tr>
+             <tr>
+                <td>16 - NumeroDivisibleEntre2</td>
+                <td>
+                    <pre>
+let N = parseInt(prompt("Ingrese un número:"));
+
+if (N % 2 === 0) {
+    alert("Valor divisible");
+} else {
+    alert("No es divisible");
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+N = int(input("Ingrese un número: "))
+if N % 2 == 0:
+    print("Valor divisible")
+else:
+    print("No es divisible")
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>17 - DivisibilidadEntre3 (Varios)</td>
+                <td>
+                    <pre>
+if (9 % 3 === 0) {
+    alert("9 es divisible entre tres");
+} else {
+    alert("9 no es divisible entre tres");
+}
+
+if (15 % 3 === 0) {
+    alert("15 es divisible entre tres");
+} else {
+    alert("15 no es divisible entre tres");
+}
+
+if (13 % 3 === 0) {
+    alert("13 es divisible entre tres");
+} else {
+    alert("13 no es divisible entre tres");
+}
+
+if (19 % 3 === 0) {
+    alert("19 es divisible entre tres");
+} else {
+    alert("19 no es divisible entre tres");
+}
+
+if (27 % 3 === 0) {
+    alert("27 es divisible entre tres");
+} else {
+    alert("27 no es divisible entre tres");
+}
+
+if (34 % 3 === 0) {
+    alert("34 no es divisible entre tres");
+} else {
+    alert("34 no es divisible entre tres");
+}
+
+if (39 % 3 === 0) {
+    alert("39 es divisible entre tres");
+} else {
+    alert("39 no es divisible entre tres");
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+numeros = [9, 15, 13, 19, 27, 34, 39]
+for num in numeros:
+    if num % 3 == 0:
+        print(f"{num} es divisible entre tres")
+    else:
+        print(f"{num} no es divisible entre tres")
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>18 - NumeroEnIntervalo5a10</td>
+                <td>
+                    <pre>
+let numero = parseFloat(prompt("Ingrese un número:"));
+
+if (numero >= 5 && numero <= 10) {
+    alert("El número está en el intervalo");
+} else {
+    alert("El número no está en el intervalo");
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+numero = float(input("Ingrese un número: "))
+if 5 <= numero <= 10:
+    print("El número está en el intervalo")
+else:
+    print("El número no está en el intervalo")
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>19 - AlumnoAprobadoReprobado</td>
+                <td>
+                    <pre>
+let numero = parseFloat(prompt("Ingrese un número:"));
+
+if (numero > 7) {
+    alert("El alumno está aprobado");
+} else {
+    alert("El alumno está reprobado");
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+numero = float(input("Ingrese un número: "))
+if numero > 7:
+    print("El alumno está aprobado")
+else:
+    print("El alumno está reprobado")
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>20 - CalificacionALetra</td>
+                <td>
+                    <pre>
+let calif = parseFloat(prompt("Ingrese la calificación del alumno:"));
+
+if (calif >= 6 && calif <= 6.9) {
+    alert("Regular");
+} else if (calif >= 7 && calif <= 7.9) {
+    alert("Bueno");
+} else if (calif >= 8 && calif <= 8.9) {
+    alert("Muy bueno");
+} else if (calif >= 9 && calif <= 10) {
+    alert("Excelente");
+} else {
+    alert("Calificación fuera de rango");
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+calif = float(input("Ingrese la calificación del alumno: "))
+
+if 6 <= calif <= 6.9:
+    print("Regular")
+elif 7 <= calif <= 7.9:
+    print("Bueno")
+elif 8 <= calif <= 8.9:
+    print("Muy bueno")
+elif 9 <= calif <= 10:
+    print("Excelente")
+else:
+    print("Calificación fuera de rango")
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>21 - TablaDeMultiplicarDel2</td>
+                <td>
+                    <pre>
+let x = 2;
+
+for (let i = 1; i <= 10; i++) {
+    let result = x * i;
+    console.log(`${x} x ${i} = ${result}`);
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+x = 2
+for i in range(1, 11):
+    result = x * i
+    print(f"{x} x {i} = {result}")
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>22 - TablaDeMultiplicarDel5</td>
+                <td>
+                    <pre>
+let x = 5;
+
+for (let i = 1; i <= 10; i++) {
+    let result = x * i;
+    console.log(`${x} x ${i} = ${result}`);
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+x = 5
+for i in range(1, 11):
+    result = x * i
+    print(f"{x} x {i} = {result}")
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>23 - CuadradoDeLos10PrimerosNumeros</td>
+                <td>
+                    <pre>
+for (let i = 1; i <= 10; i++) {
+    let result = i * i;
+    console.log(`${i} x ${i} = ${result}`);
+}
+                    </pre>
+                </td>
+                <td>
+                    <pre>
+for i in range(1, 11):
+    result = i ** 2
+    print(f"{i} x {i} = {result}")
+                    </pre>
+                </td>
+            </tr>
+<tr>
+    <td>24 - Numeros pares del 0 al 20</td>
+    <td>
+        <pre>
+const numero = parseInt(prompt("Ingrese un número:"));
+for (let i = 1; i <= 10; i++) {
+    const resultado = numero * i;
+    console.log("resultado", resultado);
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+numero = int(input("Ingrese un número: "))
+for i in range(1, 11):
+    resultado = numero * i
+    print("resultado", resultado)
+        </pre>
+    </td>
+</tr>
+<tr>
+    <td>25 - Números impares del 1 al 15</td>
+    <td>
+        <pre>
+for (let i = 1; i <= 15; i++) {
+    if (i % 2 === 1) {
+        console.log(i);
+    }
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+for i in range(1, 16):
+    if i % 2 == 1:
+        print(i)
+        </pre>
+    </td>
+</tr>
+<tr>
+    <td>26 - Vocales en la palabra santiago tuxtla</td>
+    <td>
+        <pre>
+const palabra = "santiago tuxtla";
+const vocales = "aeiouAEIOU";
+
+for (let letra of palabra) {
+    if (vocales.includes(letra)) {
+        console.log(letra);
+    }
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+palabra = "santiago tuxtla"
+vocales = "aeiouAEIOU"
+
+for letra in palabra:
+    if letra in vocales:
+        print(letra)
+        </pre>
+    </td>
+</tr>
+<tr>
+    <td>27 - Suma acumulada del 5000 al 99999</td>
+    <td>
+        <pre>
+let c = 0;
+for (let i = 5000; i < 100000; i++) {
+    c = c + i;
+    console.log(`${c} + ${i} = ${c}`);
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+c = 0
+for i in range(5000, 100000):
+    c = c + i
+    print(f"{c} + {i} = {c}")
+        </pre>
+    </td>
+</tr>
+<tr>
+    <td>28 - Contar números pares del 5 al 15</td>
+    <td>
+        <pre>
+let contador = 0;
+
+for (let i = 5; i <= 15; i++) {
+    if (i % 2 === 0) {
+        contador = contador + 1;
+    }
+}
+
+console.log(`Hay: ${contador} números pares`);
+        </pre>
+    </td>
+    <td>
+        <pre>
+contador = 0
+
+for i in range(5, 16):
+    if i % 2 == 0:
+        contador += 1
+
+print(f"Hay: {contador} números pares")
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>29 - Número mayor menor o igual a N entre 20 ingresados</td>
+    <td>
+        <pre>
+let N = parseFloat(prompt("Ingrese un número:"));
+
+if (isNaN(N) || N <= 1) {
+    console.log("El número debe ser mayor que 1");
+} else {
+    let mayor_menor = N;
+
+    for (let i = 0; i < 20; i++) {
+        let num = parseFloat(prompt("Ingrese un número:"));
+
+        if (!isNaN(num) && num <= N && num > mayor_menor) {
+            mayor_menor = num;
+        }
+    }
+
+    console.log("El número mayor menor o igual es:", mayor_menor);
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+try:
+    N = float(input("Ingrese un número: "))
+    if N <= 1:
+        print("El número debe ser mayor que 1")
+    else:
+        mayor_menor = N
+        for _ in range(20):
+            try:
+                num = float(input("Ingrese un número: "))
+                if num <= N and num > mayor_menor:
+                    mayor_menor = num
+            except ValueError:
+                continue
+        print("El número mayor menor o igual es:", mayor_menor)
+except ValueError:
+    print("Entrada inválida")
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>30 - Promedio de 38 calificaciones</td>
+    <td>
+        <pre>
+let contador = 0;
+let S = 0;
+
+while (contador <= 39) {
+    let c = parseFloat(prompt("Ingrese la calificación:"));
+    if (!isNaN(c)) {
+        S += c;
+        contador++;
+    } else {
+        alert("Por favor, ingrese un número válido.");
+    }
+}
+
+let promedio = S / 40;
+console.log("Promedio:", promedio);
+        </pre>
+    </td>
+    <td>
+        <pre>
+contador = 0
+S = 0
+
+while contador < 40:
+    try:
+        c = float(input("Ingrese la calificación: "))
+        S += c
+        contador += 1
+    except ValueError:
+        print("Por favor, ingrese un número válido.")
+
+promedio = S / 40
+print("Promedio:", promedio)
+        </pre>
+    </td>
+</tr>  
+<tr>
+    <td>31 - Verificar si un número es primo</td>
+    <td>
+        <pre>
+let n = parseInt(prompt("Ingrese un número:"));
+
+if (n <= 1) {
+    console.log("NO es primo");
+} else {
+    let es_primo = true;
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            console.log("NO es primo");
+            es_primo = false;
+            break;
+        }
+    }
+
+    if (es_primo) {
+        console.log("ES primo");
+    }
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+import math
+
+n = int(input("Ingrese un número: "))
+
+if n <= 1:
+    print("NO es primo")
+else:
+    es_primo = True
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            print("NO es primo")
+            es_primo = False
+            break
+
+    if es_primo:
+        print("ES primo")
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>32 - Leer 10 caracteres y almacenarlos en un vector</td>
+    <td>
+        <pre>
+function leerCaracteres() {
+    let s = parseInt(prompt("Ingrese el tamaño del vector:"));
+    let vector = [];
+    
+    for (let i = 0; i < s; i++) {
+        let caracter = prompt(`Introduce el caracter ${i + 1}:`);
+        vector.push(caracter);
+    }
+
+    console.log("El vector resultante es:");
+    for (let i = 0; i < s; i++) {
+        console.log(vector[i]);
+    }
+}
+
+leerCaracteres();
+        </pre>
+    </td>
+    <td>
+        <pre>
+s = int(input("Ingrese el tamaño del vector: "))
+vector = []
+
+for i in range(s):
+    caracter = input(f"Introduce el caracter {i + 1}: ")
+    vector.append(caracter)
+
+print("El vector resultante es:")
+for c in vector:
+    print(c)
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>33 - Leer 10 temperaturas en Celsius y mostrarlas</td>
+    <td>
+        <pre>
+function leerTemperaturas() {
+    let temperaturas = [];
+    
+    for (let i = 0; i < 10; i++) {
+        let temperatura = parseFloat(prompt(`Temperatura ${i + 1}:`));
+        temperaturas.push(temperatura);
+    }
+
+    console.log("Las temperaturas de los 10 pacientes en Celsius son:");
+    for (let i = 0; i < 10; i++) {
+        console.log(temperaturas[i]);
+    }
+}
+
+leerTemperaturas();
+        </pre>
+    </td>
+    <td>
+        <pre>
+temperaturas = []
+
+for i in range(10):
+    temp = float(input(f"Temperatura {i + 1}: "))
+    temperaturas.append(temp)
+
+print("Las temperaturas de los 10 pacientes en Celsius son:")
+for t in temperaturas:
+    print(t)
+        </pre>
+    </td>
+</tr>
+<tr>
+    <td>34 - Toneladas mensuales del año</td>
+    <td>
+        <pre>
+let toneladas = [];
+
+for (let i = 0; i < 12; i++) {
+    let entrada = parseFloat(prompt(`Ingrese toneladas ${i + 1} de 2024:`));
+    toneladas.push(entrada);
+}
+
+console.log(`Toneladas mensuales de 2024:`, toneladas);
+
+let suma = 0;
+for (let i = 0; i < toneladas.length; i++) {
+    suma += toneladas[i];
+}
+let promedio = suma / toneladas.length;
+console.log(`Promedio de toneladas de 2024: ${promedio}`);
+        </pre>
+    </td>
+    <td>
+        <pre>
+toneladas = []
+
+for i in range(12):
+    entrada = float(input(f"Ingrese toneladas {i + 1} de 2024: "))
+    toneladas.append(entrada)
+
+print("Toneladas mensuales de 2024:", toneladas)
+
+promedio = sum(toneladas) / len(toneladas)
+print(f"Promedio de toneladas de 2024: {promedio}")
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>35 - Vector de 500 posiciones con incrementos de 0.1</td>
+    <td>
+        <pre>
+for (let i = 0; i < 500; i++) {
+    let valor = i * 0.1;
+    console.log(valor);
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+for i in range(500):
+    valor = i * 0.1
+    print(valor)
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>36 - Matriz 5x5 inicializada en cero</td>
+    <td>
+        <pre>
+let Me = Array.from({ length: 5 }, () => Array(5).fill(0));
+
+Me.forEach(fila => console.log(fila));
+        </pre>
+    </td>
+    <td>
+        <pre>
+Me = [[0 for _ in range(5)] for _ in range(5)]
+
+for fila in Me:
+    print(fila)
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>37 - Suma de dos matrices</td>
+    <td>
+        <pre>
+function sumarMatrices(matriz1, matriz2) {
+    const filas = matriz1.length;
+    const columnas = matriz1[0].length;
+
+    let matriz_result = [];
+
+    for (let i = 0; i < filas; i++) {
+        let fila_resultado = [];
+        for (let j = 0; j < columnas; j++) {
+            fila_resultado.push(matriz1[i][j] + matriz2[i][j]);
+        }
+        matriz_result.push(fila_resultado);
+    }
+
+    console.log("Matriz resultado de la suma:");
+    for (let fila of matriz_result) {
+        console.log(fila);
+    }
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+def sumar_matrices(matriz1, matriz2):
+    filas = len(matriz1)
+    columnas = len(matriz1[0])
+    matriz_result = []
+
+    for i in range(filas):
+        fila_resultado = []
+        for j in range(columnas):
+            fila_resultado.append(matriz1[i][j] + matriz2[i][j])
+        matriz_result.append(fila_resultado)
+
+    print("Matriz resultado de la suma:")
+    for fila in matriz_result:
+        print(fila)
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>38 - Suma de dos vectores unidimensionales</td>
+    <td>
+        <pre>
+function sumarVectores(vector1, vector2) {
+    if (vector1.length !== vector2.length) {
+        throw new Error("Los vectores deben tener la misma longitud");
+    }
+
+    let vectorResultado = vector1.map((valor, index) => valor + vector2[index]);
+
+    return vectorResultado;
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+def sumar_vectores(v1, v2):
+    if len(v1) != len(v2):
+        raise ValueError("Los vectores deben tener la misma longitud")
+
+    return [v1[i] + v2[i] for i in range(len(v1))]
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>39 - Leer 10 caracteres en un vector</td>
+    <td>
+        <pre>
+function leerCaracteres() {
+    let vector = [];
+    for (let i = 0; i < 10; i++) {
+        let caracter = prompt(`Ingrese caracter ${i + 1}:`);
+        vector.push(caracter);
+    }
+    return vector;
+}
+
+let vector = leerCaracteres();
+console.log("Vector de caracteres:");
+console.log(vector);
+        </pre>
+    </td>
+    <td>
+        <pre>
+vector = []
+for i in range(10):
+    caracter = input(f"Ingrese caracter {i + 1}: ")
+    vector.append(caracter)
+
+print("Vector de caracteres:")
+print(vector)
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>40 - Verificar posiciones vacías en matriz 3x3</td>
+    <td>
+        <pre>
+let matriz = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+];
+
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        if (matriz[i][j] === 0) {
+            console.log(`La posición (${i + 1}, ${j + 1}) está vacía`);
+        }
+    }
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+matriz = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+
+for i in range(3):
+    for j in range(3):
+        if matriz[i][j] == 0:
+            print(f"La posición ({i + 1}, {j + 1}) está vacía")
+        </pre>
+    </td>
+</tr>
+<tr>
+    <td>41 - Leer valores enteros para una matriz 3x3</td>
+    <td>
+        <pre>
+let matriz = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+];
+
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        let valor = parseInt(prompt(`Ingrese valor entero para la posición (${i + 1}, ${j + 1}):`));
+        matriz[i][j] = valor;
+    }
+}
+
+console.log("Matriz:");
+for (let fila of matriz) {
+    console.log(fila);
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+matriz = [[0 for _ in range(3)] for _ in range(3)]
+
+for i in range(3):
+    for j in range(3):
+        valor = int(input(f"Ingrese valor entero para la posición ({i + 1}, {j + 1}): "))
+        matriz[i][j] = valor
+
+print("Matriz:")
+for fila in matriz:
+    print(fila)
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>42 - Contar elementos mayores a 10 en una matriz 5x5</td>
+    <td>
+        <pre>
+let matriz = [
+    [1, 12, 3, 16, 5],
+    [6, 7, 8, 9, 10],
+    [11, 2, 13, 14, 3],
+    [4, 15, 1, 17, 18],
+    [19, 20, 2, 21, 22]
+];
+
+let contadorMayores10 = 0;
+
+for (let fila of matriz) {
+    for (let elemento of fila) {
+        if (elemento > 10) {
+            contadorMayores10++;
+        }
+    }
+}
+
+console.log("Número de elementos mayores a 10:", contadorMayores10);
+        </pre>
+    </td>
+    <td>
+        <pre>
+matriz = [
+    [1, 12, 3, 16, 5],
+    [6, 7, 8, 9, 10],
+    [11, 2, 13, 14, 3],
+    [4, 15, 1, 17, 18],
+    [19, 20, 2, 21, 22]
+]
+
+contador_mayores_10 = 0
+
+for fila in matriz:
+    for elemento in fila:
+        if elemento > 10:
+            contador_mayores_10 += 1
+
+print("Número de elementos mayores a 10:", contador_mayores_10)
+        </pre>
+    </td>
+</tr>
+
+<tr>
+    <td>43 - Determinar mayor y menor entre dos números</td>
+    <td>
+        <pre>
+let N1 = parseFloat(prompt("Ingrese número 1:"));
+let N2 = parseFloat(prompt("Ingrese número 2:"));
+
+if (N1 > N2) {
+    console.log(`Número mayor: ${N1}`);
+    console.log(`Número menor: ${N2}`);
+} else if (N1 < N2) {
+    console.log(`Número mayor: ${N2}`);
+    console.log(`Número menor: ${N1}`);
+}
+        </pre>
+    </td>
+    <td>
+        <pre>
+N1 = float(input("Ingrese número 1: "))
+N2 = float(input("Ingrese número 2: "))
+
+if N1 > N2:
+    print(f"Número mayor: {N1}")
+    print(f"Número menor: {N2}")
+elif N2 > N1:
+    print(f"Número mayor: {N2}")
+    print(f"Número menor: {N1}")
+        </pre>
+    </td>
+</tr>
+<tr>
+<td>43 - Determinar mayor y menor entre dos números</td>
+    <td>
+
+    <pre>
+let N1 = parseFloat(prompt("Ingrese número 1:"));
+let N2 = parseFloat(prompt("Ingrese número 2:"));
+let N3 = parseFloat(prompt("Ingrese número 3:"));
+
+if (N1 > N2 && N1 > N3 && N2 > N3) {
+    console.log(`${N1} es mayor y ${N3} es menor`);
+} else if (N1 > N2 && N1 > N3 && N3 > N2) {
+    console.log(`${N1} es mayor y ${N2} es menor`);
+} else if (N2 > N1 && N2 > N3 && N1 > N3) {
+    console.log(`${N2} es mayor y ${N3} es menor`);
+} else if (N2 > N1 && N2 > N3 && N3 > N1) {
+    console.log(`${N2} es mayor y ${N1} es menor`);
+} else if (N3 > N1 && N3 > N2 && N2 > N1) {
+    console.log(`${N3} es mayor y ${N1} es menor`);
+} else if (N3 > N1 && N3 > N2 && N1 > N2) {
+    console.log(`${N3} es mayor y ${N2} es menor`);
+} else {
+    console.log("Al menos dos números son iguales. No se puede determinar un único mayor y menor.");
+}
+    </code></pre>
+  </td>
+  <td>
+    <pre><code>
+N1 = float(input("Ingrese número 1: "))
+N2 = float(input("Ingrese número 2: "))
+N3 = float(input("Ingrese número 3: "))
+
+if N1 > N2 and N1 > N3 and N2 > N3:
+    print(f"{N1} es mayor y {N3} es menor")
+elif N1 > N2 and N1 > N3 and N3 > N2:
+    print(f"{N1} es mayor y {N2} es menor")
+elif N2 > N1 and N2 > N3 and N1 > N3:
+    print(f"{N2} es mayor y {N3} es menor")
+elif N2 > N1 and N2 > N3 and N3 > N1:
+    print(f"{N2} es mayor y {N1} es menor")
+elif N3 > N1 and N3 > N2 and N2 > N1:
+    print(f"{N3} es mayor y {N1} es menor")
+elif N3 > N1 and N3 > N2 and N1 > N2:
+    print(f"{N3} es mayor y {N2} es menor")
+else:
+    print("Al menos dos números son iguales. No se puede determinar un único mayor y menor.")
+    </code></pre>
+  </td>
+</tr>
+<tr>
+  <td>45-1 - saber que alumnos estan reprobados, aprobado bajo, aprobado y excelente </td>
+  <td>
+    <pre>
+let calif = parseFloat(prompt("Ingrese la calificación:"));
+
+if (calif >= 0 && calif <= 5.9) {
+    console.log("Reprobado");
+} else if (calif >= 6 && calif <= 6.9) {
+    console.log("Aprobado bajo");
+} else if (calif >= 7 && calif <= 8.9) {
+    console.log("Aprobado medio");
+} else if (calif >= 9 && calif <= 10) {
+    console.log("Aprobado excelente");
+} else {
+    console.log("Calificación fuera de rango");
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+calif = float(input("Ingrese la calificación: "))
+
+if 0 <= calif <= 5.9:
+    print("Reprobado")
+elif 6 <= calif <= 6.9:
+    print("Aprobado bajo")
+elif 7 <= calif <= 8.9:
+    print("Aprobado medio")
+elif 9 <= calif <= 10:
+    print("Aprobado excelente")
+else:
+    print("Calificación fuera de rango")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>45 - Serie Fibonacci (10 términos)</td>
+  <td>
+    <pre>
+let A = 0;
+let B = 1;
+
+for (let i = 0; i &lt; 10; i++) {
+    let C = A + B;
+    console.log(C);
+    A = B;
+    B = C;
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+A = 0
+B = 1
+
+for _ in range(10):
+    C = A + B
+    print(C)
+    A = B
+    B = C
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>46 - Suma de compras hasta cero</td>
+  <td>
+    <pre>
+let total = 0;
+
+while (true) {
+    let compra = parseFloat(prompt("Ingrese el total de la compra (0.0 para terminar):"));
+
+    if (compra === 0.0) {
+        break;
+    }
+
+    total += compra;
+}
+
+console.log(`Total a pagar: $${total.toFixed(2)}`);
+    </pre>
+  </td>
+  <td>
+    <pre>
+total = 0.0
+
+while True:
+    compra = float(input("Ingrese el total de la compra (0.0 para terminar): "))
+    if compra == 0.0:
+        break
+    total += compra
+
+print(f"Total a pagar: ${total:.2f}")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>47 - Suma con actualización en ciclo</td>
+  <td>
+    <pre>
+let S = 0;
+let C = 100;
+let contador = 0;
+
+for (let i = 0; i &lt; 35; i++) {
+    S = S + C;
+    C = S;
+    contador += S;
+}
+
+console.log(`Total S: ${contador}`);
+    </pre>
+  </td>
+  <td>
+    <pre>
+S = 0
+C = 100
+contador = 0
+
+for _ in range(35):
+    S = S + C
+    C = S
+    contador += S
+
+print(f"Total S: {contador}")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>48-1 - Fibonacci con detalle (10 términos)</td>
+  <td>
+    <pre>
+console.log("Programa Fibonacci los primeros 10 valores");
+
+let a = 0;
+let b = 1;
+
+for (let i = 1; i &lt;= 10; i++) {
+    let c = a + b;
+    console.log(`Valor Fibonacci: ${a} + ${b} = ${c}  / Iteracion ${i}`);
+    a = b;
+    b = c;
+}
+
+console.log("Fin del programa Fibonacci");
+    </pre>
+  </td>
+  <td>
+    <pre>
+print("Programa Fibonacci los primeros 10 valores")
+
+a = 0
+b = 1
+
+for i in range(1, 11):
+    c = a + b
+    print(f"Valor Fibonacci: {a} + {b} = {c}  / Iteracion {i}")
+    a = b
+    b = c
+
+print("Fin del programa Fibonacci")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>48 - Fibonacci desde 100 con suma total (35 términos)</td>
+  <td>
+    <pre>
+let A = 100;
+let B = 101;
+let fibonacci = [A, B];
+
+for (let i = 0; i &lt; 33; i++) {
+    let C = A + B;
+    fibonacci.push(C);
+    A = B;
+    B = C;
+}
+
+let suma_total = fibonacci.reduce((acc, val) => acc + val, 0);
+
+console.log("Secuencia de Fibonacci desde 100 (35 términos):");
+console.log(fibonacci);
+console.log(`\nSuma total de los 35 términos: ${suma_total}`);
+    </pre>
+  </td>
+  <td>
+    <pre>
+A = 100
+B = 101
+fibonacci = [A, B]
+
+for _ in range(33):
+    C = A + B
+    fibonacci.append(C)
+    A = B
+    B = C
+
+suma_total = sum(fibonacci)
+
+print("Secuencia de Fibonacci desde 100 (35 términos):")
+print(fibonacci)
+print(f"\nSuma total de los 35 términos: {suma_total}")
+    </pre>
+  </td>
+</tr>
+<tr>
+  <td>49 - Imprimir números del 1 al 10 con for</td>
+  <td>
+    <pre>
+console.log("Hola mundo");
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+print("Hola mundo")
+
+for i in range(1, 11):
+    print(i)
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>50 - Imprimir números del 1 al 10 con while</td>
+  <td>
+    <pre>
+let c = 1;
+
+while (c <= 10) {
+    console.log(c);
+    c = c + 1;
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+c = 1
+while c <= 10:
+    print(c)
+    c += 1
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>51 - Clasificación de calificaciones</td>
+  <td>
+    <pre>
+let cal = parseFloat(prompt("Ingresa una calificación:"));
+
+if (cal >= 0 && cal <= 5) {
+    console.log("reprobado");
+}
+
+if (cal > 5 && cal < 6) {
+    console.log("mal");
+}
+
+if (cal >= 6 && cal < 7) {
+    console.log("bajo");
+}
+
+if (cal >= 7 && cal < 8) {
+    console.log("medio");
+}
+
+if (cal >= 8 && cal < 9) {
+    console.log("alto");
+}
+
+if (cal >= 9 && cal <= 10) {
+    console.log("muy alto");
+}
+
+if (cal > 10 || cal < 0) {
+    console.log("fuera de rango");
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+cal = float(input("Ingresa una calificación: "))
+
+if 0 <= cal <= 5:
+    print("reprobado")
+if 5 < cal < 6:
+    print("mal")
+if 6 <= cal < 7:
+    print("bajo")
+if 7 <= cal < 8:
+    print("medio")
+if 8 <= cal < 9:
+    print("alto")
+if 9 <= cal <= 10:
+    print("muy alto")
+if cal > 10 or cal < 0:
+    print("fuera de rango")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>52 - Fibonacci 10 términos (sin detalle)</td>
+  <td>
+    <pre>
+let a = 0;
+let b = 1;
+let c = 0;
+
+for (let i = 1; i <= 10; i++) {
+    c = a + b;
+    a = b;
+    b = c;
+    console.log(c);
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+a, b = 0, 1
+
+for _ in range(10):
+    c = a + b
+    a = b
+    b = c
+    print(c)
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>53 - Precio e IVA con suma total (imprime dentro del ciclo)</td>
+  <td>
+    <pre>
+console.log("Try programiz.pro");
+
+let p = parseFloat(prompt("Ingrese el precio del producto:"));
+let s = 0;
+
+while (p !== 0) {
+    s += p;
+    let iva = p * 0.16;
+    console.log(`Precio del producto: ${p}, su impuesto: ${iva.toFixed(2)}`);
+
+    p = parseFloat(prompt("Ingrese el precio del producto:"));
+
+    console.log(`Suma total de productos: ${s.toFixed(2)}`);
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+print("Try programiz.pro")
+
+p = float(input("Ingrese el precio del producto: "))
+s = 0
+
+while p != 0:
+    s += p
+    iva = p * 0.16
+    print(f"Precio del producto: {p}, su impuesto: {iva:.2f}")
+    p = float(input("Ingrese el precio del producto: "))
+    print(f"Suma total de productos: {s:.2f}")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>54 - Precio e IVA suma total </td>
+  <td>
+    <pre>
+let s = 0;
+let p = parseFloat(prompt("Introduce el precio del producto (0 para terminar):"));
+
+while (p !== 0) {
+    s += p;
+    let IVA = p * 0.16;
+    console.log(`Precio del producto: ${p}, su impuesto: ${IVA.toFixed(2)}`);
+    p = parseFloat(prompt("Introduce el precio del producto (0 para terminar):"));
+}
+
+console.log(`Suma total de los productos: ${s.toFixed(2)}`);
+    </pre>
+  </td>
+  <td>
+    <pre>
+s = 0
+p = float(input("Introduce el precio del producto (0 para terminar): "))
+
+while p != 0:
+    s += p
+    IVA = p * 0.16
+    print(f"Precio del producto: {p}, su impuesto: {IVA:.2f}")
+    p = float(input("Introduce el precio del producto (0 para terminar): "))
+
+print(f"Suma total de los productos: {s:.2f}")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>55 - Suma ventas total</td>
+  <td>
+    <pre>
+let totalven = 0;
+let entrada = prompt("Ingrese las ventas. Escribe 'fin' para terminar\nVenta:");
+
+while (entrada !== "fin") {
+    // Verificar si es un número válido
+    if (!isNaN(entrada) && entrada.trim() !== "") {
+        totalven += parseFloat(entrada);
+    } else {
+        console.log("Número inválido");
+    }
+
+    entrada = prompt("Venta:");
+}
+
+console.log(`Total: ${totalven.toFixed(2)}`);
+    </pre>
+  </td>
+  <td>
+    <pre>
+totalven = 0.0
+entrada = input("Ingrese las ventas. Escribe 'fin' para terminar\nVenta: ")
+
+while entrada != "fin":
+    try:
+        valor = float(entrada)
+        totalven += valor
+    except ValueError:
+        print("Número inválido")
+
+    entrada = input("Venta: ")
+
+print(f"Total: {totalven:.2f}")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>56 - Guardar 9 valores en lista</td>
+  <td>
+    <pre>
+let vector = [];
+let contador = 0;
+
+while (contador < 9) {
+    let valor = prompt(`Ingresa el valor ${contador + 1}:`);
+    vector.push(valor);
+    contador++;
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+vector = []
+contador = 0
+
+while contador < 9:
+    valor = input(f"Ingresa el valor {contador + 1}: ")
+    vector.append(valor)
+    contador += 1
+    </pre>
+  </td>
+</tr>
+<tr>
+  <td>57 - Tabla del 5</td>
+  <td>
+    <pre>
+let tabla_5 = [];
+
+for (let i = 1; i <= 10; i++) {
+    let resultado = 5 * i;
+    tabla_5.push(resultado);
+    console.log(`${5} * ${i} = ${resultado}`);
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+tabla_5 = []
+
+for i in range(1, 11):
+    resultado = 5 * i
+    tabla_5.append(resultado)
+    print(f"5 * {i} = {resultado}")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>58 - Suma elemento a elemento de dos vectores (listas)</td>
+  <td>
+    <pre>
+let V1 = [];
+let V2 = [];
+
+for (let i = 0; i < 10; i++) {
+    V1.push(parseInt(prompt(`Ingrese el número ${i + 1} para el primer vector:`), 10));
+}
+
+for (let i = 0; i < 10; i++) {
+    V2.push(parseInt(prompt(`Ingrese el número ${i + 1} para el segundo vector:`), 10));
+}
+
+for (let i = 0; i < 10; i++) {
+    let suma = V1[i] + V2[i];
+    console.log(`${V1[i]} + ${V2[i]} = ${suma}`);
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+V1 = []
+V2 = []
+
+for i in range(10):
+    V1.append(int(input(f"Ingrese el número {i+1} para el primer vector: ")))
+
+for i in range(10):
+    V2.append(int(input(f"Ingrese el número {i+1} para el segundo vector: ")))
+
+for i in range(10):
+    suma = V1[i] + V2[i]
+    print(f"{V1[i]} + {V2[i]} = {suma}")
+    </pre>
+  </td>
+</tr>
+
+<tr>
+  <td>59 - Suma elemento a elemento de dos vectores (listas) - Repetición</td>
+  <td>
+    <pre>
+let V1 = [];
+let V2 = [];
+
+for (let i = 0; i < 10; i++) {
+    V1.push(parseInt(prompt(`Ingrese el número ${i + 1} para el primer vector:`), 10));
+}
+
+for (let i = 0; i < 10; i++) {
+    V2.push(parseInt(prompt(`Ingrese el número ${i + 1} para el segundo vector:`), 10));
+}
+
+for (let i = 0; i < 10; i++) {
+    let suma = V1[i] + V2[i];
+    console.log(`${V1[i]} + ${V2[i]} = ${suma}`);
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+V1 = []
+V2 = []
+
+for i in range(10):
+    V1.append(int(input(f"Ingrese el número {i+1} para el primer vector: ")))
+
+for i in range(10):
+    V2.append(int(input(f"Ingrese el número {i+1} para el segundo vector: ")))
+
+for i in range(10):
+    suma = V1[i] + V2[i]
+    print(f"{V1[i]} + {V2[i]} = {suma}")
+    </pre>
+  </td>
+</tr>
+
+
+<tr>
+  <td>60 - Convertir grados Celsius a Fahrenheit</td>
+  <td>
+    <pre>
+function gradosCentigradosAFahrenheit(gradosCelsius) {
+    return (gradosCelsius * 9/5) + 32;
+}
+
+let gradosCelsius = parseFloat(prompt("Introduce los grados Celsius:"));
+let gradosFahrenheit = gradosCentigradosAFahrenheit(gradosCelsius);
+
+console.log(`${gradosCelsius}°C equivalen a ${gradosFahrenheit}°F`);
+    </pre>
+  </td>
+  <td>
+    <pre>
+def grados_centigrados_a_fahrenheit(grados_celsius):
+    return (grados_celsius * 9/5) + 32
+
+grados_celsius = float(input("Introduce los grados Celsius: "))
+grados_fahrenheit = grados_centigrados_a_fahrenheit(grados_celsius)
+
+print(f"{grados_celsius}°C equivalen a {grados_fahrenheit}°F")
+    </pre>
+  </td>
+</tr>
+
